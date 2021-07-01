@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>My Family Book</title>
+</head>
+<body>
+    <audio id="audio" src="https://mahdihat791.github.io/v2/test.mp3">
+</audio>
+
+  <h1>My Family Book</h1>
+    <p>
+<img id="album" src="https://images-na.ssl-images-amazon.com/images/I/51KNpAKei-L.jpg">
+ <div>
+        <button type="button" onclick="nextslide()"> Next </button>
+ </div>
+  <p id="reasontext">My Family Book</p>
+</body>
+  <script>
+      var reasons = [
+  "This is my dad his name is Anant Kandadye",
+  "This is me my name is Aadya Kandadye",
+  "This is my mom her name is Spandana Kandadye",
+
+];
+var images = ["https://static.wikia.nocookie.net/bokunoheroacademia/images/8/84/Masaru_Bakugo_anime.png/revision/latest?cb=20180730170735", "https://pbs.twimg.com/media/Ex45cKlU8AEjoJg?format=jpg&name=4096x4096","https://static.wikia.nocookie.net/bokunoheroacademia/images/b/b7/Mitsuki_Bakugo.png/revision/latest?cb=20180625014446"];
+
+var i = 0;
+for(i=0;i=1;i++){
+function nextslide() {  document.getElementById("reasontext").innerHTML = reasons[i];
+  document.getElementById("album").src = images[i]};}
+
+  </script>
+
+</html>
